@@ -10,6 +10,7 @@ func main() {
 
 	// cards := deck{"Ace of Diamonds",newCard()}
 	cards := newDeck()
+	cards.saveToFile("my_cards")
 	// cards = append(cards,"Six of Spades")
 	// for i,card := range cards{
 		// 	fmt.Println(i,card)
@@ -21,7 +22,6 @@ func main() {
 	hand.print()
 	fmt.Println("===========================")
 	remainingDeck.print()
-
 }
 
 // func newCard() string{
