@@ -10,18 +10,20 @@ func main() {
 
 	// cards := deck{"Ace of Diamonds",newCard()}
 	cards := newDeck()
-	cards.saveToFile("my_cards")
+	cards.shuffle()
+	// cards := newDeckFromFile("my_cards")
+	// cards.saveToFile("my_cards")
 	// cards = append(cards,"Six of Spades")
 	// for i,card := range cards{
 		// 	fmt.Println(i,card)
 		// }
 		
-	// cards.print()
+	cards.print()
 
-	hand,remainingDeck := deal(cards,5)
-	hand.print()
+	// hand,remainingDeck := deal(cards,5)
+	// hand.print()
 	fmt.Println("===========================")
-	remainingDeck.print()
+	// remainingDeck.print()
 }
 
 // func newCard() string{
